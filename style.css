@@ -1,0 +1,315 @@
+body {
+    background-color: #22d3ee;
+    font-family: "Courier New";
+    color: wheat;
+    margin: 0; 
+}
+
+.container {
+    height: 100vh;
+    overflow-y: auto; 
+}
+
+.sidebar a{
+    text-decoration: none;
+  }
+
+.sidebar nav {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    transition: top 0.5s ease-in-out;
+}
+
+.sidebar nav ul {
+    padding: 0px;
+    display: inline-flex;
+    justify-content: center;
+    list-style: none;
+    gap: 10px;
+    border-radius: 30px;
+    font-weight: 300;
+    color: #22d3ee;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: wheat;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #ccc;
+}
+
+.sidebar nav ul li {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.about {
+    font-size: 24px;
+    background-color: #0f172a !important;
+    padding: 100px 0px 0px 0px;
+    text-align: center;
+    color: wheat;
+}
+
+.aboutt {
+    font-size: 20px;
+    padding: 100px 100px;
+}
+
+
+/* Button Styles */
+.btn-download {
+    display: inline-block;
+    background-color: #22d3ee;
+    color: #0f172a;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-download:hover {
+    background-color: #0056b3;
+}
+
+
+
+#hi {
+    font-size: 95px !important;
+    color: #22d3ee;
+    margin: 20px;
+}
+
+.me, .projectss {
+    padding: 80px 50px 20px 50px;
+    font-size: 18px;
+    margin: 20px 0px;
+    background: #0f172a !important;
+}
+
+.about, .me, .skills, .projectss {
+    min-height: 80vh; 
+    background: #0f172a !important;
+}
+
+.heading {
+    font-size: 32px !important;
+    color: #22d3ee;
+    text-align: center;
+}
+
+.skills {
+    font-size: 18px;
+    background: #0f172a !important;
+    padding: 50px;
+    text-align: center;
+    color: wheat;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.skills-container img {
+    width: 128px;
+    height: 128px;
+    margin: 10px;
+}
+
+.skill-text {
+    margin: 0px;
+}
+
+.projectss {
+    padding: 50px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto; 
+}
+
+.project-card {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.project-card img {
+    width: 50px;
+    height: 50px;
+}
+
+.project-details {
+    flex: 1;
+}
+
+.project-details h3 {
+    margin: 0 0 10px 0;
+    color: #ff007f;
+}
+
+.project-details p {
+    margin: 0 0 10px 0;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.tag {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 0.8em;
+}
+
+.tag-python { background-color: #ff007f; }
+.tag-ml { background-color: #00d4ff; }
+.tag-flask { background-color: #007bff; }
+.tag-html { background-color: #28a745; }
+.tag-java { background-color: #563d7c; }
+.tag-and { background-color: #3aa08a; }
+.tag-run { background-color: #9e119e; }
+
+.projects a{
+    text-decoration: none;
+    color: wheat;
+}
+
+
+
+@media (max-width: 600px) {
+    .sidebar nav ul li {
+        padding: 8px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .aboutt {
+        padding: 0px 0px;
+    }
+
+    #hi {
+        font-size: 80px !important;
+    }
+
+    .skills-container {
+        max-width: 600px;
+    }
+
+    .project-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .project-card img {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-container img {
+        width: 96px;
+        height: 96px;
+    }
+}
+
+@media (max-width: 576px) {
+    .skills-container img {
+        width: 64px;
+        height: 64px;
+    }
+}
+
+
+
+footer {
+    background-color: #0f172a;
+    color: wheat;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+.social-icon.instagram {
+    background-color: #e4405f;
+}
+
+
+
+.social-icon.github {
+    background-color: #459d37;
+}
+.social-icon.hackerrank {
+    background-color: #5f7e2a;  
+}
+
+.social-icon:hover {
+    color: #ddd;    
+}
+
+.contact-email {
+    margin-bottom: 10px;
+}
+
+.contact-email a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-email a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer div{
+    padding: 10px;
+}

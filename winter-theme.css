@@ -1,0 +1,125 @@
+body {
+    background-color: #1a365d;
+    font-family: "Courier New";
+    color: #fff;
+    margin: 0;
+    position: relative;
+}
+* Snowfall container */
+.snowfall {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 10;
+    overflow: hidden;
+}
+
+
+.snowflake {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    opacity: 0.8;
+    animation: fall 10s linear infinite;
+    animation-timing-function: linear;
+}
+
+
+.snowflake:nth-child(odd) {
+    background-image: url('snow.png');
+}
+
+.snowflake:nth-child(even) {
+    background-image: url('snow2.png');
+}
+
+
+@keyframes fall {
+    0% {
+        transform: translateY(-10%) translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) translateX(100px); /* Fall to the bottom with horizontal drift */
+        opacity: 0.3;
+    }
+}
+
+
+.snow-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-image: url('snow.png');
+    background-size: cover;
+    z-index: 999;
+}
+
+
+.snowfall .snowflake:nth-child(1) { left: 10%; animation-delay: 0s; }
+.snowfall .snowflake:nth-child(2) { left: 20%; animation-delay: 0s; }
+.snowfall .snowflake:nth-child(4) { left: 40%; animation-delay: 0s; }
+.snowfall .snowflake:nth-child(3) { left: 30%; animation-delay: 0s; }
+.snowfall .snowflake:nth-child(5) { left: 50%; animation-delay: 0s; }
+.snowfall .snowflake:nth-child(6) { left: 60%; animation-delay: 0s; }
+.snowfall .snowflake:nth-child(7) { left: 70%; animation-delay: 0s; }
+.snowfall .snowflake:nth-child(8) { left: 80%; animation-delay: 0s; }
+.snowfall .snowflake:nth-child(9) { left: 90%; animation-delay: 0s; }
+.snowfall .snowflake:nth-child(10) { left: 95%; animation-delay: 0s; }
+
+
+
+.christmas-tree {
+    position: absolute;
+    bottom: 50px; 
+    left: 10%;
+    width: 200px;  
+    height: auto;
+    background-image: url('christmas-tree.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 999;
+}
+
+.christmas-tree-gif {
+    position: absolute;
+    bottom: 50px; 
+    right: 10%;
+    width: 200px;  
+    height: auto;
+    background-image: url('christmas-tree-gif.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1000;
+}
+
+
+.christmas-tree {
+    position: fixed;
+    bottom: 0;
+    left: 5%;
+    z-index: 998;
+}
+
+.christmas-tree img {
+    width: 200px;
+    height: auto;
+}
+
+.christmas-tree-gif {
+    position: fixed;
+    bottom: 0;
+    right: 5%;
+    z-index: 998;
+}
+
+.christmas-tree-gif img {
+    width: 200px;
+    height: auto;
+}
